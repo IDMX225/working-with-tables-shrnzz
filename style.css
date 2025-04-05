@@ -1,3 +1,97 @@
-body {
-  background-color: aliceblue;
+* {
+  background-color: #6FC3F0;
+}
+
+h2 {
+  font-family: "Winky Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.icondiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+.table td, .table th{
+  background-color: #9CCBF0;
+  border: 1px solid black;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  overflow:hidden;
+  padding:12px 15px;
+  word-break:normal;
+}
+
+.table th {
+  background-color: #5C9FCF; 
+  color: white;
+  font-weight: bold; 
+}
+
+.table .table-row{
+  border-color:inherit;
+  text-align:center;
+  vertical-align:top
+}
+
+footer {
+  text-align: center;
+}
+
+/* Media Queries: 
+ Desktop 1024px or wider */
+@media (min-width: 1024px) {
+  .table {
+    font-size: 16px; 
+    table-layout: auto; 
+  }
+}
+
+/* iPad or tablets between 768px and 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .table {
+    font-size: 14px; 
+    width: 100%;
+  }
+
+  .table td, .table th {
+    padding: 10px; 
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  
+  .table {
+    width: 100%;
+    display: block; 
+    table-layout: fixed;
+    overflow-x: auto; 
+  }
+
+  .table td, .table th {
+    padding: 8px 10px; 
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 30px; 
+  }
 }
